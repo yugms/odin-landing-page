@@ -4,18 +4,27 @@
     --card-image-size: 150px;
 }
 
-/* *FONT STYLING */
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section, .header, .footer {
+    background-color: #1f2937;
+    color: #f9faf8;
 }
 
 h1.hero-text {
     font-size: 48px;
-    color: #f9faf8;
     font-weight: 900;
 }
 
@@ -26,7 +35,6 @@ p.hero-text, .links a {
 
 .logo {
     font-size: 24px;
-    color: #f9faf8;
     font-weight: 500;
 }
 
@@ -50,17 +58,72 @@ ul, li, a {
     padding: 0;
 }
 
-/* *MISC DISPLAY CONFIG* */
+.header, .links {
+    display: flex;
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+.links {
+    gap: 24px;
+}
+
+.hero-section {
+    display: flex;
+    flex: 1;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 500px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 500px;
+    margin-left: -50px;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 
 .card-image {
     width: var(--card-image-size);
     height: var(--card-image-size);
     border-radius: 16px;
-    border: #3882f6 solid 2px;
+    border: #3882f6 solid 4px;
 }
 
 .hero-image {
-    height: 200px;
+    height: 300px;
     border-radius: 16px;
-    border: #3882f6 solid 2px;
+}
+
+button[type=button] {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    border: white 2px solid;
+    font-weight: bold;
+    color:#f9faf8;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.hero-section button {
+    border: none;
 }
