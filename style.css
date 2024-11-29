@@ -2,6 +2,8 @@
 
 :root {
     --card-image-size: 150px;
+    --off-white: #f9faf8;
+    --blue-color: #3882f6;
 }
 
 body {
@@ -20,7 +22,7 @@ h1,p {
 
 .hero-section, .header, .footer {
     background-color: #1f2937;
-    color: #f9faf8;
+    color: var(--off-white);
 }
 
 h1.hero-text {
@@ -117,6 +119,24 @@ ul, li, a {
     gap: 16px;
 }
 
+.cta-section {
+    display: flex;
+    flex-basis: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box {
+    background-color: var(--blue-color);
+    color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    flex-basis: 75vw;
+    height: 50%;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -128,7 +148,7 @@ ul, li, a {
     width: var(--card-image-size);
     height: var(--card-image-size);
     border-radius: 16px;
-    border: #3882f6 solid 4px;
+    border: var(--blue-color) solid 4px;
 }
 
 .hero-image {
@@ -139,10 +159,10 @@ ul, li, a {
 button[type=button] {
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #3882f6;
-    border: white 2px solid;
+    background-color: var(--blue-color);
+    border: var(--off-white) 2px solid;
     font-weight: bold;
-    color:#f9faf8;
+    color: var(--off-white);
     font-family: "Roboto";
     font-size: 14px;
 }
