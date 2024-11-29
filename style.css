@@ -109,6 +109,12 @@ ul, li, a {
 
 .quote-section {
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer {
